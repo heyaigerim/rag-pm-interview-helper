@@ -31,7 +31,7 @@ Instead of fine-tuning a model, I use OpenAI’s embeddings and FAISS to search 
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 1. Clone the repo:
    ```bash
@@ -40,39 +40,40 @@ Instead of fine-tuning a model, I use OpenAI’s embeddings and FAISS to search 
 Add your .env file with your OpenAI API key:
 
 2. Add your .env file with your OpenAI API key:
-OPENAI_API_KEY=your-api-key-here
+   ```OPENAI_API_KEY=your-api-key-here
 
 3. Install required packages:
-pip install openai faiss-cpu python-dotenv PyPDF2
+   ```pip install openai faiss-cpu python-dotenv PyPDF2
 
 4. Run it:
-python rag_pm_simple.py
+   ```python rag_pm_simple.py
 
-You’ll be prompted to ask a PM-style question. The script will:
+**You’ll be prompted to ask a PM-style question. The script will:**
 - Embed the source PDF (if it hasn’t already)
 - Retrieve the most relevant chunks using vector search
 - Pass your query and the retrieved context to GPT-4
 - Return a clean, focused answer
 
 ## Example Use Cases
-- 👩‍💻 PM Interview Prep – Ask questions like “What’s the STAR method?” or “How do I explain a product failure?”
-- 📚 Domain-specific retrieval – Swap in other PDFs (e.g., UX design, system design, consulting)
-- 🧪 RAG learning sandbox – A clean starting point to build your own RAG prototype
+- PM Interview Prep – Ask questions like “What’s the STAR method?” or “How do I explain a product failure?”
+- Domain-specific retrieval – Swap in other PDFs (e.g., UX design, system design, consulting)
+- RAG learning sandbox – A clean starting point to build your own RAG prototype
 
-## 🔍 What You’ll Learn
+## What You’ll Learn
 - How to use OpenAI Embeddings to encode long-form text
 - How to use FAISS to build a searchable vector index
 - How to structure prompts using retrieved context to improve LLM responses
 - How simple tools can meaningfully improve AI accuracy in narrow domains
 
 
-## 📖 Credits
+## Credits
 Inspired by Cracking the PM Interview
 
-**Built by Aigerim Kurmanbekova**
+## Built by Aigerim Kurmanbekova
+
 UC Berkeley MIMS | Product Manager | AI & Data Enthusiast
 
-📎 Want to use your own material? Just replace the PDF file and rerun the script.
+Want to use your own material? Just replace the PDF file and rerun the script.
 
 
 

@@ -1,5 +1,3 @@
-# rag_pm_simple.py
-
 from pdfminer.high_level import extract_text
 from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
