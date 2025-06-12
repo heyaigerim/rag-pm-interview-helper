@@ -37,16 +37,18 @@ Instead of fine-tuning a model, I use OpenAI’s embeddings and FAISS to search 
    ```bash
    git clone https://github.com/heyaigerim/rag-pm-interview-helper.git
    cd rag-pm-interview-helper
-Add your .env file with your OpenAI API key:
 
 2. Add your .env file with your OpenAI API key:
-   ```OPENAI_API_KEY=your-api-key-here
+   ```bash
+   OPENAI_API_KEY=your-api-key-here
 
 3. Install required packages:
-   ```pip install openai faiss-cpu python-dotenv PyPDF2
+   ```bash
+   pip install openai faiss-cpu python-dotenv PyPDF2
 
 4. Run it:
-   ```python rag_pm_simple.py
+   ```bash
+   python rag_pm_simple.py
 
 **You’ll be prompted to ask a PM-style question. The script will:**
 - Embed the source PDF (if it hasn’t already)
@@ -69,7 +71,7 @@ Add your .env file with your OpenAI API key:
 ## Credits
 Inspired by Cracking the PM Interview
 
-## Built by Aigerim Kurmanbekova
+**Built by Aigerim Kurmanbekova**
 
 UC Berkeley MIMS | Product Manager | AI & Data Enthusiast
 
